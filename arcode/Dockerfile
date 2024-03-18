@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Set the working directory in the container
-WORKDIR /usr/src/gibspons/
+WORKDIR /usr/src/arcode/
 
 # Copy the requirements file into the container at /usr/src/app/
 COPY ./requirements.txt /usr/src/arcode/

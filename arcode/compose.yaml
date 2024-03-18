@@ -28,6 +28,7 @@ services:
       - postgres
     networks:
       - arcode-network
+
       
 volumes:
   postgres-db:

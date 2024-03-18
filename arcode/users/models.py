@@ -6,7 +6,5 @@ class User(AbstractUser):
     username= models.CharField(max_length=254, unique=True)
     email=models.EmailField(max_length=254, unique=True)    
     password=models.CharField(max_length=255)
+    wins=models.IntegerField(default=0)
 
-class Friend(models.Model):
-    user=models.ForeignKey('User', on_delete=models.CASCADE)
-    friend=models.ForeignKey('User', on_delete=models.CASCADE, related_name='friend')

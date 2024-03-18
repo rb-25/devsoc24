@@ -8,8 +8,8 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework import status
 
-from .models import User
-from .serializers import UserSerializer
+from users.models import User
+from users.serializers import UserSerializer
 
 class RegisterView(APIView):
     permission_classes = [AllowAny]
